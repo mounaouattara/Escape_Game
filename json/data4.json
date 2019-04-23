@@ -1,0 +1,93 @@
+{
+  "idNiveau":4,
+  "background":"images/scene_four/sanstableau.png",
+  "lesElements":[
+    {
+      "idElement":"homer",
+      "nom":"HOMER SIMPSON",
+      "dialogue":"OH PUNEEEZZZZZ ! qu est ce que c est que ca ? un MORT ?????",
+      "effetSonoreSrc":["sfx/scream.mp3"],
+      "imageSrc":"elements/homer.svg",
+      "positionX":5,
+      "positionY":20,
+      "width":25,
+      "height":25,
+      "zIndex":2,
+      "display":"block",
+      "lesFonctions":["afficherDialogue","effetSonore","grossirPnj"]
+    },
+    {
+      "idElement":"inspecteur",
+      "nom":"INSPECTEUR",
+      "dialogue":"Hmmm ... Y a t-il un symbole pour expliquer cette mort ?",
+      "effetSonoreSrc":["sfx/ImaFirenMahLazor.mp3"],
+      "imageSrc":"elements/inspecteur.png",
+      "positionX":70,
+      "positionY":10,
+      "width":20,
+      "height":25,
+      "zIndex":2,
+      "display":"block",
+      "lesFonctions":["afficherDialogue","effetSonore","grossirPnj"]
+    },
+    {
+      "idElement":"cadavre",
+      "nom":"MONSIEUR LE CADAVRE",
+      "dialogue":"AAARRRGGHH X/ (mais je suis déjà mort moi ...)",
+      "effetSonoreSrc":["sfx/vomis.mp3"],
+      "imageSrc":"elements/body.svg",
+      "positionX":30,
+      "positionY":5,
+      "width":35,
+      "height":20,
+      "zIndex":5,
+      "display":"block",
+      "lesFonctions":["afficherDialogue","effetSonore","grossirPnj"]
+    },
+    {
+      "idElement":"placardFerme",
+      "nom":"(placard)",
+      "dialogue":"Super ! vous avez trouvé quelque chose ..",
+      "effetSonoreSrc":["sfx/ouvrirFenetre.mp3"],
+      "imageSrc":"elements/button.png",
+      "positionX":17.2,
+      "positionY":42,
+      "width":4,
+      "height":17,
+      "zIndex":3,
+      "display":"block",
+      "lesFonctions":["effetSonore","afficherElement"],
+      "affichageElements":["placardOuvert","bottle"]
+
+
+    },
+    {
+      "idElement":"placardOuvert",
+      "effetSonoreSrc":["sfx/clacPorte1.mp3"],
+      "imageSrc":"elements/noir.jpg",
+      "positionX":17,
+      "positionY":42,
+      "width":4.2,
+      "height":17,
+      "zIndex":3,
+      "display":"none",
+      "lesFonctions":["effetSonore","afficherElement"],
+      "affichageElements":["placardFerme"]
+
+    },
+    {
+      "idElement":"bottle",
+      "effetSonoreSrc":["sfx/itemGet.mp3"],
+      "nom":"(bottle)",
+      "dialogue":"Super ! vous avez trouvé quelque chose .. Il est ecrit : 'le mort et le chiffre mystere !'",
+      "imageSrc":"elements/bottle.png",
+      "positionX":16.8,
+      "positionY":46,
+      "width":5,
+      "height":7,
+      "zIndex":4,
+      "display":"none",
+      "lesFonctions":["afficherDialogue","effetSonore","grossirPnj","desactiverFonction"]
+    }
+  ]
+}

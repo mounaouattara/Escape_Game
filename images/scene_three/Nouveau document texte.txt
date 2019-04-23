@@ -1,0 +1,7 @@
+clics  :
+- 4 torches qui font une énigme avec le son
+- papier sur la table qui possède un texte 
+- cliquer sur les tableaux peut faire apparaitre une note 
+de musique qui indique la mélodie qu'il faut choisir pour les
+spots
+

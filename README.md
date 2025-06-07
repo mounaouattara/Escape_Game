@@ -27,15 +27,6 @@ The game will be available at:
 http://localhost:3000
 ```
 
-## Project Structure
-
-```
-.
-├── server.js          # Main server file
-├── package.json
-└── public/            # Static files (HTML, CSS, JS)
-```
-
 ## Description
 
 This project sets up a basic real-time server for an interactive escape game. Players can connect simultaneously and interact through WebSockets. All game logic can be customized inside `server.js` and client-side scripts located in the `public/` directory.
